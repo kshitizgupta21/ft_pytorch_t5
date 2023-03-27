@@ -48,14 +48,12 @@ Batch Size 32, T5-11B, output_seq_len=1, TP=1
 
 Here ms per batch is latency and tokens/sec is throughput
 
-N3 also are interested in output_seq_len=1 (aka time to first token) so you can run 
+If you are also are interested in output_seq_len=1 (aka time to first token) so you can run 
 
 ```
 bash benchmark_t5_11b.sh 8 1
 ```
-and then fill out the latencies you get in Time to first token in the spreadhsheet
 
-And you can run output seq len = [32, 1] for TP = [4, 8]
 
 
 
